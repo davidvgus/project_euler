@@ -7,9 +7,7 @@ int total(int upperBoundary)
   int sum = 0;
 
   for(count; count < upper; count++){
-    if (count % 15 == 0){
-      sum += count;
-    } else if( count % 3 == 0 || count % 5 == 0) {
+    if( count % 3 == 0 || count % 5 == 0) {
       sum += count;
     }
   }
@@ -17,6 +15,6 @@ int total(int upperBoundary)
 }
 
 void main(){
-  printf("%d", total(10));
+  printf("%d\n", total(10));
 }
 

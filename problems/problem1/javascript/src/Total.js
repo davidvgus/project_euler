@@ -6,9 +6,7 @@ window.total = function(upperBoundary){
   var sum = 0;
 
   for(count; count < upper; count += 1){
-    if (count % 15 === 0){
-      sum += count;
-    } else if (count % 3 === 0 || count % 5 === 0){
+    if (count % 3 === 0 || count % 5 === 0){
       sum+= count;
     }
   }
